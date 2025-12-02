@@ -1,0 +1,10 @@
+services:
+  - type: static
+    name: as241s4-pii-t03-fe
+    env: node
+    plan: free
+    branch: develop
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    nodeVersion: 20
+
